@@ -15,7 +15,7 @@ Reseñas: Usuario, Hotel, Calificación, Comentario, Fecha de publicación.
 Notificaciones: Usuario destinatario, tipo de notificación, mensaje, fecha, estado de envío.
 
 
-##¿Qué datos son críticos?
+## ¿Qué datos son críticos?
 
 Reservas porque representan las operaciones relacionadas con los usuarios.
 Disponibilidad porque debe mantenerse actualizada para evitar reservar una habitación que  ya está reservada.
