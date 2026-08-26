@@ -46,10 +46,15 @@ Esto permite que los servicios sean independientes y evita que todos dependan di
 ## PARTE 6 – USUARIOS Y ROLES
 ## Paso 6: Identificar usuarios
 ## ¿Quién usará el sistema?
+
 Cliente/Viajero
+
 Administrador del hotel
+
 Administrador del sistema 
+
 Agencia de viajes/ empresa
+
 ## Pregunta clave:
 ## ¿Todos pueden hacer lo mismo?
 NO, cada usuario tendrá permisos diferentes de acuerdo a su rol por ejemplo:
