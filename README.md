@@ -2,12 +2,12 @@
 ## Paso 5: Datos del sistema
 ### Respondan: ¿Qué información debe guardarse?
 
-Usuarios: ID usuarios, Nombre, Correo electrónico, Contraseña, Información de contacto, Rol de usuario.
-Hoteles: ID hotel, Nombre, Ubicación, Descripción, Servicios ofrecidos, Información de contacto.
-Habitaciones: ID habitación, hotel al que pertenece,Tipo de habitación, precio, Capacidad, Estado de disponibilidad.
-Reservas: ID de la reserva, Usuario, Hotel, Habitación, Fecha de entrada, Fecha de salida, Estado de la reserva, Fecha de creación.
-Reseñas: Usuario, Hotel, Calificación, Comentario, Fecha de publicación.
-Notificaciones: Usuario destinatario, tipo de notificación, mensaje, fecha, estado de envío.
+# Usuarios: ID usuarios, Nombre, Correo electrónico, Contraseña, Información de contacto, Rol de usuario.
+# Hoteles: ID hotel, Nombre, Ubicación, Descripción, Servicios ofrecidos, Información de contacto.
+# Habitaciones: ID habitación, hotel al que pertenece,Tipo de habitación, precio, Capacidad, Estado de disponibilidad.
+# Reservas: ID de la reserva, Usuario, Hotel, Habitación, Fecha de entrada, Fecha de salida, Estado de la reserva, Fecha de creación.
+# Reseñas: Usuario, Hotel, Calificación, Comentario, Fecha de publicación.
+# Notificaciones: Usuario destinatario, tipo de notificación, mensaje, fecha, estado de envío.
 
 
 ¿Qué datos son críticos?
