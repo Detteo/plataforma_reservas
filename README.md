@@ -5,3 +5,19 @@ La plataforma permite conectar a los viajeros con los hoteles que tengan disponi
 
 ## Servicios del sistema
 -
+-
+-
+
+## Comunicación entre servicios
+
+
+## Tipo de arquitectura
+
+
+## Base de datos
+
+
+## Usuarios del sistemas
+
+
+## Riesgo y fallas posibles
