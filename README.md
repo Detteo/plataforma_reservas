@@ -3,6 +3,7 @@
 ### Respondan: ¿Qué información debe guardarse?
 
 Usuarios: ID usuarios, Nombre, Correo electrónico, Contraseña, Información de contacto, Rol de usuario.
+
 Hoteles: ID hotel, Nombre, Ubicación, Descripción, Servicios ofrecidos, Información de contacto.
 Habitaciones: ID habitación, hotel al que pertenece,Tipo de habitación, precio, Capacidad, Estado de disponibilidad.
 Reservas: ID de la reserva, Usuario, Hotel, Habitación, Fecha de entrada, Fecha de salida, Estado de la reserva, Fecha de creación.
