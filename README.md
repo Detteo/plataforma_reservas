@@ -1,7 +1,6 @@
 ## PARTE 5 – BASE DE DATOS
 ## Paso 5: Datos del sistema
-Respondan:
-¿Qué información debe guardarse?
+### Respondan: ¿Qué información debe guardarse?
 
 Usuarios: ID usuarios, Nombre, Correo electrónico, Contraseña, Información de contacto, Rol de usuario.
 Hoteles: ID hotel, Nombre, Ubicación, Descripción, Servicios ofrecidos, Información de contacto.
