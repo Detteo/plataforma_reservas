@@ -1,5 +1,5 @@
-PARTE 5 – BASE DE DATOS
-Paso 5: Datos del sistema
+## PARTE 5 – BASE DE DATOS
+## Paso 5: Datos del sistema
 Respondan:
 ¿Qué información debe guardarse?
 
