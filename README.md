@@ -36,7 +36,7 @@ Ejemplos:
 
 - Reseñas: Si se pierde esta información, desaparecen las calificaciones y comentarios realizados por los usuarios. 
 
-##Pregunta clave: ¿Todos los servicios usan la misma base de datos o cada uno tiene la suya?
+## Pregunta clave: ¿Todos los servicios usan la misma base de datos o cada uno tiene la suya?
 
 como estamos utilizando una arquitectura de microservicios lo más coherente es que cada servicio tenga su propia base de datos o de almacenamiento independiente.
 Esto permite que los servicios sean independientes y evita que todos dependan directamente de una única base de datos.
