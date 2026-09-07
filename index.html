@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Posada — Reserva hoteles sin sorpresas</title>
+<meta name="description" content="Compara y reserva hoteles boutique y refugios urbanos en más de 4,000 ciudades, sin comisiones ocultas.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-row">
+    <a class="brand" href="#inicio">
+      <svg class="brand-mark" width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+        <path d="M15 2.5 L27 12.5 V27.5 H3 V12.5 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M11.5 27.5V17.5C11.5 16.1 12.6 15 14 15H16C17.4 15 18.5 16.1 18.5 17.5V27.5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      </svg>
+      <span>Posada</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+      <a href="#destinos">Destinos</a>
+      <a href="#hoteles">Hoteles</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#ayuda">Ayuda</a>
+      <a href="#ingresar" class="nav-login-mobile">Iniciar sesión</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-text" href="#ingresar">Iniciar sesión</a>
+      <a class="btn btn-primary btn-small" href="#registro">Registrarme</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-sky" aria-hidden="true"></div>
+
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1>Cada ciudad tiene una puerta<br>que te espera.</h1>
+        <p class="hero-sub">Compara hoteles boutique y refugios urbanos en más de 4,000 ciudades. Precio final, sin sorpresas al pagar.</p>
+      </div>
+
+      <svg class="hero-skyline" id="heroSkyline" viewBox="0 0 560 360" aria-hidden="true">
+        <defs>
+          <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#1B3A52"/>
+            <stop offset="100%" stop-color="#0E1B2A"/>
+          </linearGradient>
+          <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#F0C368"/>
+            <stop offset="100%" stop-color="#E3A94C"/>
+          </linearGradient>
+        </defs>
+
+        <circle class="skyline-moon" cx="440" cy="80" r="46" fill="url(#glow)" opacity="0.9"/>
+
+        <g class="skyline-piece" style="--d:0s">
+          <rect x="30" y="180" width="70" height="160" fill="#12293C"/>
+          <rect x="40" y="200" width="12" height="14" fill="#E3A94C" opacity="0.85"/>
+          <rect x="62" y="200" width="12" height="14" fill="#E3A94C" opacity="0.4"/>
+          <rect x="40" y="228" width="12" height="14" fill="#E3A94C" opacity="0.4"/>
+          <rect x="62" y="228" width="12" height="14" fill="#E3A94C" opacity="0.85"/>
+          <rect x="40" y="256" width="12" height="14" fill="#E3A94C" opacity="0.6"/>
+          <rect x="62" y="256" width="12" height="14" fill="#E3A94C" opacity="0.4"/>
+        </g>
+
+        <g class="skyline-piece" style="--d:.08s">
+          <path d="M100 340V150 C100 130 175 130 175 150 V340 Z" fill="#183349"/>
+          <rect x="118" y="170" width="14" height="16" fill="#F0C368" opacity="0.7"/>
+          <rect x="145" y="170" width="14" height="16" fill="#F0C368" opacity="0.4"/>
+          <rect x="118" y="200" width="14" height="16" fill="#F0C368" opacity="0.4"/>
+          <rect x="145" y="200" width="14" height="16" fill="#F0C368" opacity="0.7"/>
+        </g>
+
+        <g class="skyline-piece" style="--d:.16s">
+          <rect x="180" y="110" width="90" height="230" fill="#0F2438"/>
+          <rect x="196" y="130" width="14" height="16" fill="#E3A94C" opacity="0.5"/>
+          <rect x="222" y="130" width="14" height="16" fill="#E3A94C" opacity="0.85"/>
+          <rect x="248" y="130" width="14" height="16" fill="#E3A94C" opacity="0.4"/>
+          <rect x="196" y="160" width="14" height="16" fill="#E3A94C" opacity="0.4"/>
+          <rect x="222" y="160" width="14" height="16" fill="#E3A94C" opacity="0.4"/>
+          <rect x="248" y="160" width="14" height="16" fill="#E3A94C" opacity="0.7"/>
+          <rect x="196" y="190" width="14" height="16" fill="#E3A94C" opacity="0.7"/>
+          <rect x="222" y="190" width="14" height="16" fill="#E3A94C" opacity="0.4"/>
+          <rect x="248" y="190" width="14" height="16" fill="#E3A94C" opacity="0.5"/>
+        </g>
+
+        <g class="skyline-piece" style="--d:.24s">
+          <path d="M270 340V190 L315 150 L360 190 V340 Z" fill="#18344B"/>
+          <rect x="290" y="220" width="16" height="18" fill="#F0C368" opacity="0.6"/>
+          <rect x="316" y="220" width="16" height="18" fill="#F0C368" opacity="0.35"/>
+          <rect x="290" y="255" width="16" height="18" fill="#F0C368" opacity="0.4"/>
+          <rect x="316" y="255" width="16" height="18" fill="#F0C368" opacity="0.75"/>
+        </g>
+
+        <g class="skyline-piece" style="--d:.32s">
+          <rect x="365" y="140" width="60" height="200" fill="#12293C"/>
+          <rect x="378" y="160" width="12" height="14" fill="#E3A94C" opacity="0.8"/>
+          <rect x="400" y="160" width="12" height="14" fill="#E3A94C" opacity="0.4"/>
+          <rect x="378" y="188" width="12" height="14" fill="#E3A94C" opacity="0.4"/>
+          <rect x="400" y="188" width="12" height="14" fill="#E3A94C" opacity="0.6"/>
+        </g>
+
+        <g class="skyline-piece" style="--d:.4s">
+          <rect x="430" y="200" width="110" height="140" fill="#0E2032"/>
+          <rect x="448" y="222" width="14" height="16" fill="#F0C368" opacity="0.5"/>
+          <rect x="474" y="222" width="14" height="16" fill="#F0C368" opacity="0.8"/>
+          <rect x="500" y="222" width="14" height="16" fill="#F0C368" opacity="0.4"/>
+          <rect x="448" y="252" width="14" height="16" fill="#F0C368" opacity="0.4"/>
+          <rect x="474" y="252" width="14" height="16" fill="#F0C368" opacity="0.4"/>
+          <rect x="500" y="252" width="14" height="16" fill="#F0C368" opacity="0.7"/>
+        </g>
+
+        <rect x="0" y="335" width="560" height="25" fill="#0A1520"/>
+      </svg>
+    </div>
+
+    <form class="search-card wrap" id="searchForm">
+      <div class="field field-dest">
+        <label for="destino">Destino</label>
+        <input type="text" id="destino" name="destino" placeholder="¿A dónde vas?" autocomplete="off" required>
+      </div>
+      <div class="field">
+        <label for="llegada">Llegada</label>
+        <input type="date" id="llegada" name="llegada" required>
+      </div>
+      <div class="field">
+        <label for="salida">Salida</label>
+        <input type="date" id="salida" name="salida" required>
+      </div>
+      <div class="field">
+        <label for="huespedes">Huéspedes</label>
+        <select id="huespedes" name="huespedes">
+          <option>1 huésped</option>
+          <option selected>2 huéspedes</option>
+          <option>3 huéspedes</option>
+          <option>4+ huéspedes</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary search-submit">Buscar hoteles</button>
+    </form>
+  </section>
+
+  <!-- VALUE PROPS -->
+  <section class="values">
+    <div class="wrap values-row">
+      <div class="value-item">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 20 L18 30 L32 12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.35"/></svg>
+        <h3>Mejor precio, siempre</h3>
+        <p>Si encuentras el mismo cuarto más barato en otro lado, igualamos el precio y te devolvemos la diferencia.</p>
+      </div>
+      <div class="value-item">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="6" y="9" width="28" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M6 16H34" stroke="currentColor" stroke-width="2"/><path d="M14 21L18 25L26 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Cancelación sin vueltas</h3>
+        <p>La mayoría de las reservas se cancelan gratis hasta 48 horas antes de tu llegada, desde la misma app.</p>
+      </div>
+      <div class="value-item">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 22V19C8 12 13.4 7 20 7C26.6 7 32 12 32 19V22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="5" y="22" width="8" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="27" y="22" width="8" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        <h3>Soporte cuando lo necesites</h3>
+        <p>Un equipo humano responde a cualquier hora, en español, si algo cambia respecto al plan.</p>
+      </div>
+      <div class="value-item">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 5 L33 11 V19 C33 27 27.5 33 20 35 C12.5 33 7 27 7 19 V11 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M14 20L18 24L27 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Pago protegido</h3>
+        <p>Tu tarjeta viaja cifrada de principio a fin. Nunca compartimos tus datos con el hotel.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTINOS -->
+  <section class="destinos" id="destinos">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Seis ciudades para empezar</h2>
+        <p>Los lugares que más reservan nuestros huéspedes este trimestre.</p>
+      </div>
+
+      <div class="destino-mosaic">
+        <a class="destino-card destino-grande" href="#hoteles">
+          <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="400" height="300" fill="#8C4A3A"/>
+            <rect width="400" height="300" fill="url(#archGrad)"/>
+            <defs><linearGradient id="archGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#B5654B"/><stop offset="100%" stop-color="#7A3E30"/></linearGradient></defs>
+            <path d="M60 300V190 C60 150 100 150 100 190 V300" fill="#F4D9A8" opacity="0.85"/>
+            <path d="M140 300V160 C140 105 200 105 200 160 V300" fill="#F4D9A8" opacity="0.9"/>
+            <path d="M240 300V190 C240 150 280 150 280 190 V300" fill="#F4D9A8" opacity="0.85"/>
+            <path d="M320 300V210 C320 178 350 178 350 210 V300" fill="#F4D9A8" opacity="0.7"/>
+          </svg>
+          <div class="destino-info">
+            <h3>Cartagena de Indias</h3>
+            <p>Balcones, murallas y calor del Caribe · desde $58 USD/noche</p>
+          </div>
+        </a>
+
+        <a class="destino-card" href="#hoteles">
+          <svg viewBox="0 0 300 220" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="300" height="220" fill="#3E5B4A"/>
+            <path d="M150 30 L180 90 L120 90 Z" fill="#F0C368" opacity="0.9"/>
+            <rect x="130" y="90" width="40" height="130" fill="#2C4438"/>
+          </svg>
+          <div class="destino-info"><h3>Ciudad de México</h3><p>desde $49 USD/noche</p></div>
+        </a>
+
+        <a class="destino-card" href="#hoteles">
+          <svg viewBox="0 0 300 220" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="300" height="220" fill="#294357"/>
+            <rect x="95" y="55" width="24" height="140" fill="#DDE6EA" opacity="0.85"/>
+            <rect x="88" y="45" width="38" height="12" fill="#DDE6EA" opacity="0.85"/>
+            <path d="M88 45 L107 20 L126 45 Z" fill="#DDE6EA" opacity="0.85"/>
+          </svg>
+          <div class="destino-info"><h3>Buenos Aires</h3><p>desde $54 USD/noche</p></div>
+        </a>
+
+        <a class="destino-card" href="#hoteles">
+          <svg viewBox="0 0 300 220" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="300" height="220" fill="#3B6350"/>
+            <path d="M0 160 L70 70 L140 160 Z" fill="#2C4B3D"/>
+            <path d="M110 170 L180 90 L260 170 Z" fill="#345943"/>
+            <circle cx="235" cy="55" r="6" fill="#F0C368"/>
+            <line x1="30" y1="90" x2="260" y2="55" stroke="#F0C368" stroke-width="2" opacity="0.7"/>
+          </svg>
+          <div class="destino-info"><h3>Medellín</h3><p>desde $41 USD/noche</p></div>
+        </a>
+
+        <a class="destino-card" href="#hoteles">
+          <svg viewBox="0 0 300 220" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="300" height="220" fill="#7A4E63"/>
+            <path d="M0 200 Q75 160 150 200 T300 200 V220 H0 Z" fill="#5C3A4C"/>
+            <circle cx="90" cy="150" r="22" fill="#F0C368" opacity="0.8"/>
+          </svg>
+          <div class="destino-info"><h3>Barcelona</h3><p>desde $71 USD/noche</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOTELES DESTACADOS -->
+  <section class="hoteles" id="hoteles">
+    <div class="wrap">
+      <div class="section-head section-head-row">
+        <div>
+          <h2>Hoteles con algo que contar</h2>
+          <p>Seleccionados por su equipo, sus reseñas y esa primera impresión al llegar.</p>
+        </div>
+        <div class="carousel-controls">
+          <button type="button" id="carPrev" aria-label="Ver hoteles anteriores">‹</button>
+          <button type="button" id="carNext" aria-label="Ver más hoteles">›</button>
+        </div>
+      </div>
+
+      <div class="hotel-track" id="hotelTrack">
+
+        <article class="hotel-card">
+          <svg viewBox="0 0 300 190" class="hotel-thumb" aria-hidden="true"><rect width="300" height="190" fill="#B5654B"/><rect x="20" y="60" width="260" height="130" fill="#8C4A3A"/><rect x="45" y="85" width="30" height="30" fill="#F4D9A8"/><rect x="95" y="85" width="30" height="30" fill="#F4D9A8" opacity="0.6"/><rect x="145" y="85" width="30" height="30" fill="#F4D9A8"/><rect x="195" y="85" width="30" height="30" fill="#F4D9A8" opacity="0.6"/></svg>
+          <div class="hotel-body">
+            <div class="hotel-top"><h3>Casa del Farol</h3><span class="rating"><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L10 15l-5.6 3.1 1.4-6.3L1 7.5l6.4-.6z" fill="currentColor"/></svg>4.8</span></div>
+            <p class="hotel-loc">Centro Histórico, Cartagena</p>
+            <div class="hotel-tags"><span>Wifi gratis</span><span>Terraza</span></div>
+            <p class="hotel-price">desde <strong>$145 USD</strong> / noche</p>
+          </div>
+        </article>
+
+        <article class="hotel-card">
+          <svg viewBox="0 0 300 190" class="hotel-thumb" aria-hidden="true"><rect width="300" height="190" fill="#3E5B4A"/><rect x="20" y="50" width="260" height="140" fill="#2C4438"/><rect x="45" y="75" width="24" height="24" fill="#F0C368"/><rect x="90" y="75" width="24" height="24" fill="#F0C368" opacity="0.5"/><rect x="135" y="75" width="24" height="24" fill="#F0C368"/><rect x="180" y="75" width="24" height="24" fill="#F0C368" opacity="0.5"/><rect x="225" y="75" width="24" height="24" fill="#F0C368"/></svg>
+          <div class="hotel-body">
+            <div class="hotel-top"><h3>Hotel Jacaranda</h3><span class="rating"><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L10 15l-5.6 3.1 1.4-6.3L1 7.5l6.4-.6z" fill="currentColor"/></svg>4.6</span></div>
+            <p class="hotel-loc">Roma Norte, Ciudad de México</p>
+            <div class="hotel-tags"><span>Desayuno incluido</span><span>Pet-friendly</span></div>
+            <p class="hotel-price">desde <strong>$98 USD</strong> / noche</p>
+          </div>
+        </article>
+
+        <article class="hotel-card">
+          <svg viewBox="0 0 300 190" class="hotel-thumb" aria-hidden="true"><rect width="300" height="190" fill="#345943"/><rect x="20" y="55" width="120" height="135" fill="#294538"/><rect x="150" y="30" width="130" height="160" fill="#2C4B3D"/><rect x="45" y="80" width="20" height="20" fill="#F0C368" opacity="0.7"/><rect x="90" y="80" width="20" height="20" fill="#F0C368"/><rect x="175" y="55" width="20" height="20" fill="#F0C368" opacity="0.6"/><rect x="215" y="55" width="20" height="20" fill="#F0C368"/></svg>
+          <div class="hotel-body">
+            <div class="hotel-top"><h3>Terraza del Río</h3><span class="rating"><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L10 15l-5.6 3.1 1.4-6.3L1 7.5l6.4-.6z" fill="currentColor"/></svg>4.7</span></div>
+            <p class="hotel-loc">El Poblado, Medellín</p>
+            <div class="hotel-tags"><span>Piscina</span><span>Vista a la montaña</span></div>
+            <p class="hotel-price">desde <strong>$76 USD</strong> / noche</p>
+          </div>
+        </article>
+
+        <article class="hotel-card">
+          <svg viewBox="0 0 300 190" class="hotel-thumb" aria-hidden="true"><rect width="300" height="190" fill="#294357"/><rect x="30" y="40" width="240" height="150" fill="#1E3446"/><rect x="55" y="65" width="26" height="26" fill="#DDE6EA" opacity="0.8"/><rect x="105" y="65" width="26" height="26" fill="#DDE6EA" opacity="0.4"/><rect x="155" y="65" width="26" height="26" fill="#DDE6EA" opacity="0.8"/><rect x="205" y="65" width="26" height="26" fill="#DDE6EA" opacity="0.4"/></svg>
+          <div class="hotel-body">
+            <div class="hotel-top"><h3>Casa Almendro</h3><span class="rating"><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L10 15l-5.6 3.1 1.4-6.3L1 7.5l6.4-.6z" fill="currentColor"/></svg>4.9</span></div>
+            <p class="hotel-loc">Palermo, Buenos Aires</p>
+            <div class="hotel-tags"><span>Wifi gratis</span><span>Cocina compartida</span></div>
+            <p class="hotel-price">desde <strong>$112 USD</strong> / noche</p>
+          </div>
+        </article>
+
+        <article class="hotel-card">
+          <svg viewBox="0 0 300 190" class="hotel-thumb" aria-hidden="true"><rect width="300" height="190" fill="#7A4E63"/><rect x="20" y="60" width="260" height="130" fill="#5C3A4C"/><circle cx="70" cy="95" r="16" fill="#F0C368" opacity="0.8"/><rect x="110" y="80" width="28" height="28" fill="#F0C368" opacity="0.5"/><rect x="160" y="80" width="28" height="28" fill="#F0C368"/><rect x="210" y="80" width="28" height="28" fill="#F0C368" opacity="0.5"/></svg>
+          <div class="hotel-body">
+            <div class="hotel-top"><h3>Hotel Meridiano</h3><span class="rating"><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L10 15l-5.6 3.1 1.4-6.3L1 7.5l6.4-.6z" fill="currentColor"/></svg>4.5</span></div>
+            <p class="hotel-loc">Eixample, Barcelona</p>
+            <div class="hotel-tags"><span>Spa</span><span>Vista al mar</span></div>
+            <p class="hotel-price">desde <strong>$160 USD</strong> / noche</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="opiniones" id="opiniones">
+    <div class="wrap opiniones-grid">
+      <div class="opinion">
+        <svg class="quote-mark" viewBox="0 0 40 32" aria-hidden="true"><path d="M0 32V19.5C0 8.5 6.5 1.5 16 0L17.5 4.5C11 6 8 10 8 15H16V32H0ZM24 32V19.5C24 8.5 30.5 1.5 40 0L41.5 4.5C35 6 32 10 32 15H40V32H24Z" fill="currentColor"/></svg>
+        <p>Reservé una semana antes de viajar y el precio no cambió ni un peso hasta el pago final. Eso ya no es tan común.</p>
+        <span class="opinion-autor">Daniela R. · Bogotá</span>
+      </div>
+      <div class="opinion">
+        <svg class="quote-mark" viewBox="0 0 40 32" aria-hidden="true"><path d="M0 32V19.5C0 8.5 6.5 1.5 16 0L17.5 4.5C11 6 8 10 8 15H16V32H0ZM24 32V19.5C24 8.5 30.5 1.5 40 0L41.5 4.5C35 6 32 10 32 15H40V32H24Z" fill="currentColor"/></svg>
+        <p>Cambié la fecha del viaje dos días antes y todo el proceso de cancelación se resolvió por chat en diez minutos.</p>
+        <span class="opinion-autor">Julián P. · Ciudad de México</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="ayuda">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="#inicio">
+        <svg width="26" height="26" viewBox="0 0 30 30" fill="none" aria-hidden="true"><path d="M15 2.5 L27 12.5 V27.5 H3 V12.5 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M11.5 27.5V17.5C11.5 16.1 12.6 15 14 15H16C17.4 15 18.5 16.1 18.5 17.5V27.5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <span>Posada</span>
+      </a>
+      <p>Reservas de hotel claras, en ciudades donde vale la pena quedarse.</p>
+      <div class="social-links">
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">X</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Compañía</h4>
+      <a href="#">Sobre nosotros</a>
+      <a href="#">Empleo</a>
+      <a href="#">Prensa</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Ayuda</h4>
+      <a href="#">Centro de ayuda</a>
+      <a href="#">Cancelaciones</a>
+      <a href="#">Contacto</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Para tu hotel</h4>
+      <a href="#">Registra tu propiedad</a>
+      <a href="#">Panel de socios</a>
+      <a href="#">Precios</a>
+    </div>
+
+    <div class="footer-col footer-newsletter">
+      <h4>Novedades por correo</h4>
+      <form id="newsletterForm">
+        <input type="email" placeholder="tu@correo.com" required aria-label="Correo electrónico">
+        <button type="submit">Suscribirme</button>
+      </form>
+      <p class="newsletter-msg" id="newsletterMsg" role="status"></p>
+    </div>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <p>© 2026 Posada. Todos los derechos reservados.</p>
+    <div class="footer-legal">
+      <a href="#">Privacidad</a>
+      <a href="#">Términos</a>
+      <a href="#">Cookies</a>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
