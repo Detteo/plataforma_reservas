@@ -170,7 +170,7 @@ NO, cada usuario tendrá permisos diferentes de acuerdo a su rol por ejemplo:
 
 Además del análisis conceptual anterior, el proyecto ya cuenta con un primer avance de implementación.
 
-### 🗂️ Estructura del repositorio
+### Estructura del repositorio
 
 ```
 plataforma_reservas/
@@ -186,7 +186,7 @@ plataforma_reservas/
 └── docker-compose.yml               # Orquestación de los servicios con Docker
 ```
 
-### 🖼️ Diagrama de arquitectura y definición de servicios
+### Diagrama de arquitectura y definición de servicios
 
 Se formalizó la arquitectura elegida en [`docs/Arquitectura/Arquitectura.md`](docs/Arquitectura/Arquitectura.md), con un diagrama que ilustra el flujo:
 
@@ -194,7 +194,7 @@ Usuario → Vista Principal (HOME, en Docker) → API Gateway → Servicios (Usu
 
 También se amplió la definición de cada servicio (responsabilidad principal, información que maneja y comunicación con otros servicios) en [`docs/Arquitectura/definicion-servicios.md`](docs/Arquitectura/definicion-servicios.md), incluyendo los servicios futuros de Pagos y Notificaciones.
 
-### 🏠 Vista principal (HOME) implementada
+### Vista principal (HOME) implementada
 
 Se construyó una primera versión del frontend HotelSys en `home_hotel/`, una landing page estática (HTML + CSS + JS) con las siguientes secciones:
 
@@ -206,7 +206,7 @@ Se construyó una primera versión del frontend HotelSys en `home_hotel/`, una l
 
 El archivo `script.js` ya incluye la lógica para consultar el servicio de hoteles (`obtenerHoteles()`), pintar los resultados en pantalla y mostrar un mensaje cuando el backend todavía no está disponible.
 
-### 🐳 Contenerización y orquestación
+### Contenerización y orquestación
 
 Se agregó un `Dockerfile` (basado en `nginx:alpine`) para servir la vista HOME, y un `docker-compose.yml` en la raíz del proyecto que define los servicios:
 
