@@ -166,3 +166,50 @@ NO, cada usuario tendrá permisos diferentes de acuerdo a su rol por ejemplo:
 
 - Agencia/Empresa: Buscar hoteles, Consultar disponibilidad, Gestionar reservas.
 
+## AVANCE DE IMPLEMENTACIÓN
+
+Además del análisis conceptual anterior, el proyecto ya cuenta con un primer avance de implementación.
+
+### 🗂️ Estructura del repositorio
+
+```
+plataforma_reservas/
+├── docs/
+│   └── Arquitectura/
+│       ├── Arquitectura.md          # Diagrama de arquitectura (Mermaid)
+│       └── definicion-servicios.md  # Ficha detallada de cada servicio
+├── home_hotel/                      # Vista principal (HOME) del sistema
+│   ├── Dockerfile
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+└── docker-compose.yml               # Orquestación de los servicios con Docker
+```
+
+### 🖼️ Diagrama de arquitectura y definición de servicios
+
+Se formalizó la arquitectura elegida en [`docs/Arquitectura/Arquitectura.md`](docs/Arquitectura/Arquitectura.md), con un diagrama que ilustra el flujo:
+
+Usuario → Vista Principal (HOME, en Docker) → API Gateway → Servicios (Usuarios, Espacios/Hoteles, Reservas) → comunicación asíncrona futura con Pagos y Notificaciones.
+
+También se amplió la definición de cada servicio (responsabilidad principal, información que maneja y comunicación con otros servicios) en [`docs/Arquitectura/definicion-servicios.md`](docs/Arquitectura/definicion-servicios.md), incluyendo los servicios futuros de Pagos y Notificaciones.
+
+### 🏠 Vista principal (HOME) implementada
+
+Se construyó una primera versión del frontend HotelSys en `home_hotel/`, una landing page estática (HTML + CSS + JS) con las siguientes secciones:
+
+- Inicio: presentación general del sistema.
+- Servicios: tarjetas con los servicios del primer avance (Usuarios, Espacios/Hoteles, Reservas) y los servicios futuros (Pagos, Notificaciones).
+- Hoteles: contenedor preparado para mostrar los hoteles disponibles apenas el API Gateway y el servicio de Hoteles queden conectados.
+- Arquitectura: representación visual del flujo Usuario → HOME → API Gateway → Servicios.
+- Equipo: integrantes del proyecto.
+
+El archivo `script.js` ya incluye la lógica para consultar el servicio de hoteles (`obtenerHoteles()`), pintar los resultados en pantalla y mostrar un mensaje cuando el backend todavía no está disponible.
+
+### 🐳 Contenerización y orquestación
+
+Se agregó un `Dockerfile` (basado en `nginx:alpine`) para servir la vista HOME, y un `docker-compose.yml` en la raíz del proyecto que define los servicios:
+
+- `home`: sirve la vista principal (puerto `3000`).
+- `gateway`, `usuarios`, `espacios`, `reservas`: definidos por ahora como placeholders (`nginx:alpine`) a la espera de su implementación real.
+
