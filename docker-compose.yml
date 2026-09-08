@@ -1,0 +1,18 @@
+services:
+
+  home:
+    build: ./home
+    ports:
+      - "3000:80"
+
+  gateway:
+    image: nginx:alpine
+
+  usuarios:
+    image: nginx:alpine
+
+  espacios:
+    image: nginx:alpine
+
+  reservas:
+    image: nginx:alpine
