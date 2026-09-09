@@ -132,12 +132,14 @@ Como estamos utilizando una arquitectura de microservicios, lo más coherente es
 Además del análisis conceptual anterior, el proyecto ya cuenta con un primer avance de implementación contenerizado y documentado.
 
 ### Estructura del repositorio
+
+```text
 plataforma_reservas/
-├── home/hotel                     # Vista principal (HOME) del sistema
-│   └────── Dockerfile
-│       ├── index.html
-│       ├── script.js
-│       └── style.css
+├── home_hotel/                      # Vista principal (HOME) del sistema
+│   ├── Dockerfile
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
 ├── servicios/
 │   └── documentacion/
 │       └── definicion-servicios.md  # Ficha detallada de cada servicio
@@ -146,6 +148,7 @@ plataforma_reservas/
 │       └── arquitectura.md          # Diagrama de arquitectura (Mermaid)
 ├── docker-compose.yml               # Orquestación de los servicios con Docker
 └── README.md                        # Documentación general del proyecto
+```
 ### Diagrama de arquitectura y definición de servicios
 
 Se formalizó la arquitectura elegida en [`docs/arquitectura/arquitectura.md`](docs/arquitectura/arquitectura.md), con un diagrama Mermaid que ilustra el flujo:
