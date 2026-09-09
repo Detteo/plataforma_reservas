@@ -1,7 +1,6 @@
 services:
-
   home:
-    build: ./home
+    build: ./home_hotel
     ports:
       - "3000:80"
 

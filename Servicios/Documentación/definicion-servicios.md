@@ -1,10 +1,10 @@
-# 🏛️ Definición de Servicios del Sistema
+#  Definición de Servicios del Sistema
 
 ---
 
 ##  Servicios del Primer Avance (Fase 1 - Core)
 
-### 1. 👤 Servicio de Usuarios
+### 1.  Servicio de Usuarios
 * **Responsabilidad Principal:**
   Gestionar la autenticación de usuarios, creación y administración de cuentas, perfiles de clientes y asignación de roles de acceso.
 * **Información que Manejará:**
