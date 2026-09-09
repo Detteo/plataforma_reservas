@@ -149,6 +149,7 @@ plataforma_reservas/
 ├── docker-compose.yml               # Orquestación de los servicios con Docker
 └── README.md                        # Documentación general del proyecto
 ```
+
 ### Diagrama de arquitectura y definición de servicios
 
 Se formalizó la arquitectura elegida en [`docs/arquitectura/arquitectura.md`](docs/arquitectura/arquitectura.md), con un diagrama Mermaid que ilustra el flujo:
